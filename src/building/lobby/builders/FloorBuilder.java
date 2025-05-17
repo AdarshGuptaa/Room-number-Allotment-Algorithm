@@ -1,4 +1,4 @@
-package building.lobby;
+package building.lobby.builders;
 
 public class FloorBuilder {
     

@@ -1,6 +1,11 @@
-package building.lobby;
+package building.lobby.builders;
 
 import java.util.UUID;
+
+import building.lobby.DoubleLobby;
+import building.lobby.LinearLobby;
+import building.lobby.Lobby;
+import building.lobby.RoomNumberAllotter;
 
 public class lobbyBuilder {
     public static Lobby buildLinearLobby(int startRoom, int numberOfRooms, String orientation, int floor){
