@@ -1,14 +1,16 @@
 package building.lobby;
 
 public class Lobby {
-    public int lobbyId;
+    public String lobbyId;
     public int numberOfRooms;
     public int startRoom;
     public int endRoom;
     public String orientation;
     public int floor;
+    public Lobby next;
+    public Lobby previous;
 
-    public Lobby(int lobbyId, int startRoom, int endRoom, int numberOfRooms, String orientation, int floor) {
+    public Lobby(String lobbyId, int startRoom, int endRoom, int numberOfRooms, String orientation, int floor) {
         this.endRoom = endRoom;
         this.lobbyId = lobbyId;
         this.numberOfRooms = numberOfRooms;
@@ -40,5 +42,21 @@ public class Lobby {
     }
     public void setOrientation(String orientation) {
         this.orientation = orientation;
+    }
+
+    public Lobby getNext() {
+        return next;
+    }
+
+    public void setNext(Lobby next) {
+        this.next = next;
+    }
+
+    public Lobby getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(Lobby previous) {
+        this.previous = previous;
     }
 }
